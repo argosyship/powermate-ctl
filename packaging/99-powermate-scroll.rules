@@ -1,0 +1,7 @@
+# Griffin PowerMate / SoundKnob: seat access for grab + LED writes.
+ACTION=="add", SUBSYSTEM=="input", KERNEL=="event*", ATTRS{idVendor}=="077d", ATTRS{idProduct}=="0410", MODE="0660", GROUP="input", TAG+="uaccess"
+ACTION=="add", SUBSYSTEM=="input", KERNEL=="event*", ATTRS{idVendor}=="077d", ATTRS{idProduct}=="04aa", MODE="0660", GROUP="input", TAG+="uaccess"
+ACTION=="add", SUBSYSTEM=="input", KERNEL=="event*", ATTRS{idVendor}=="05f3", ATTRS{idProduct}=="0240", MODE="0660", GROUP="input", TAG+="uaccess"
+
+# Virtual high-res wheel created by powermate-scroll.
+KERNEL=="uinput", SUBSYSTEM=="misc", MODE="0660", GROUP="input", OPTIONS+="static_node=uinput", TAG+="uaccess"

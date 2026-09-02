@@ -1,0 +1,29 @@
+# Copy to ~/.config/powermate-scroll/config.toml and edit.
+
+# How many 1/120-notch units to emit per PowerMate detent.
+# The classic USB PowerMate reports about 94 detents per turn.
+#   8   = very fine / slower (highest resolution)
+#   16  = smooth reading
+#   24  = default (about 19 mouse-wheel notches per full turn)
+#   48  = fast
+#   120 = one traditional wheel click per detent (coarse)
+step_size = 24
+
+# Clockwise scrolls down the page. Set true if you want the opposite.
+invert = false
+
+# Exclusive grab so the compositor does not also see REL_DIAL.
+grab = true
+
+# Base LED brightness, 0–255. 0 turns the LED off.
+led_brightness = 96
+
+# Short click (no turn while held): "middle" or "none".
+# Middle-click is useful in browsers (open in new tab / autoscroll).
+click = "middle"
+
+# Hold the knob down and turn to scroll horizontally.
+hold_for_horizontal = true
+
+# Optional path to the event node. Leave unset to auto-detect.
+# device = "/dev/input/by-id/usb-Griffin_Technology__Inc._Griffin_PowerMate-event-if00"

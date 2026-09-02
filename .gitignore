@@ -1,0 +1,5 @@
+powermate-scroll
+tests/test_mapping
+*.o
+build/
+agent-tools/
